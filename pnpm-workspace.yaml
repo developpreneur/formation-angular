@@ -1,0 +1,17 @@
+packages:
+  - apps/*
+
+# Angular 15 et Angular 22 doivent résoudre leurs propres dépendances.
+autoInstallPeers: false
+strictPeerDependencies: true
+allowBuilds:
+  esbuild: true
+  '@parcel/watcher': true
+  lmdb: true
+  msgpackr-extract: true
+  '@swc/core': true
+  nice-napi: false
+  unrs-resolver: true
+
+overrides:
+  '@storybook/test-runner@0.22.1>playwright': 1.55.1

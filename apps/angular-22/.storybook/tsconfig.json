@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "../src/exercises/**/*.ts",
+    "./preview.ts"
+  ]
+}

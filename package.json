@@ -1,0 +1,12 @@
+{
+  "name": "formations",
+  "private": true,
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=26.0.0"
+  },
+  "scripts": {
+    "storybook:angular15": "pnpm --filter @formations/angular-15 exec ng run formation:storybook",
+    "storybook:angular22": "pnpm --filter @formations/angular-22 exec ng run formation:storybook"
+  }
+}
