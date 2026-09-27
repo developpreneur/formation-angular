@@ -49,6 +49,55 @@ button {
   font: inherit;
   cursor: pointer;
 }
+.segmented-control {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #d7e0e9;
+  border-radius: 10px;
+  background: #edf2f6;
+}
+.segmented-control button {
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 6px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  color: #35475b;
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.segmented-control button:hover:not(:disabled):not([aria-pressed="true"]) {
+  background: #dfe8ed;
+}
+.segmented-control button[aria-pressed="true"] {
+  color: #fff;
+  background: #176b5b;
+  box-shadow: 0 1px 3px rgb(20 48 61 / 22%);
+}
+.segmented-control button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.form-field {
+  margin-bottom: 1rem;
+}
+.field-error {
+  margin: 8px 0 0;
+  padding: 9px 12px;
+  border-left: 3px solid #b42318;
+  border-radius: 4px;
+  background: #fff1f0;
+  color: #b42318;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
 li {
   margin: 10px 0;
 }
@@ -141,5 +190,17 @@ li {
 
   .session-card__header {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  .segmented-control {
+    gap: 2px;
+    padding: 3px;
+  }
+
+  .segmented-control button {
+    padding-inline: 3px;
+    font-size: 0.8rem;
   }
 }
