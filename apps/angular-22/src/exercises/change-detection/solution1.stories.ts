@@ -3,9 +3,9 @@ import { verifyEditProfile } from "./behavior";
 import { EditProfileSolutionComponent } from "./solution.component";
 
 const meta: Meta<EditProfileSolutionComponent> = {
-  title: "Corrigés/07 — Détection des changements/1 - Edit profile",
+  title: "Corrigés/Détection des changements/Modifier le profil",
   component: EditProfileSolutionComponent,
-  tags: ["solution", "!autodocs", "cd-07-change-detection"],
+  tags: ["solution", "!autodocs", "change-detection"],
 };
 export default meta;
 type Story = StoryObj<EditProfileSolutionComponent>;
