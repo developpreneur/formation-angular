@@ -31,7 +31,8 @@ export async function verifyStandaloneMigration({
   await expect(inPersonSeats).toHaveTextContent(
     "2 places restantes en présentiel",
   );
-  await expect(inPersonSeats).toHaveClass("limited-seats");
+  await expect(inPersonSeats).toHaveClass("badge-warning");
   await expect(onlineSeats).toHaveTextContent("8 places restantes en ligne");
-  await expect(onlineSeats).not.toHaveClass("limited-seats");
+  await expect(onlineSeats).not.toHaveClass("badge-warning");
+  await expect(onlineSeats).toHaveClass("badge-success");
 }
