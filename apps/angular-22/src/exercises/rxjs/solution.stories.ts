@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/angular";
-import { verifyDeliveryMethodBehavior } from "./behavior";
+import { verifyReactiveSearchBehavior } from "./behavior";
 import { SolutionComponent } from "./solution.component";
 
 const meta: Meta<SolutionComponent> = {
-  title: "Corrigés/06 — Contrôle de formulaire personnalisé",
+  title: "Corrigés/RxJS",
   component: SolutionComponent,
-  tags: ["solution", "!autodocs", "forms-06"],
+  tags: ["solution", "!autodocs", "rxjs"],
 };
 export default meta;
 type Story = StoryObj<SolutionComponent>;
 
 export const Corrige: Story = {
   name: "Corrigé",
-  play: verifyDeliveryMethodBehavior,
+  play: verifyReactiveSearchBehavior,
 };

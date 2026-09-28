@@ -10,9 +10,9 @@ import { ExerciseComponent } from "./exercise.component";
  * Le terme « erreur » déclenche l'indisponibilité simulée, et l'API répond normalement après 500 ms.
  */
 const meta: Meta<ExerciseComponent> = {
-  title: "Exercices/02 — RxJS/1 — Recherche réactive",
+  title: "Exercices/RxJS",
   component: ExerciseComponent,
-  tags: ["exercise", "rxjs-02"],
+  tags: ["exercise", "rxjs"],
 };
 export default meta;
 type Story = StoryObj<ExerciseComponent>;
