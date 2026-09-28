@@ -8,7 +8,7 @@ Use standalone Angular components with inline templates and explicit imports, fo
 
 ## Exercise UI
 
-Build the exercise UI exclusively with daisyUI components and utilities. Add only the minimal custom CSS needed where daisyUI cannot express the layout. Keep the result attractive and as simple as possible, so the feature being learned remains the visual and interactive focus.
+Build the exercise UI exclusively with daisyUI components and utilities in light theme. Add only the minimal custom CSS needed where daisyUI cannot express the layout using TailwindCSS classes. Keep the result attractive and as simple as possible, so the feature being learned remains the visual and interactive focus.
 
 ## Files and ownership
 

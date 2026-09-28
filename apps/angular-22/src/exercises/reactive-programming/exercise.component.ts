@@ -19,7 +19,10 @@ import {
     ProductCatalogComponent,
     ShoppingCartComponent,
   ],
-  template: `<main class="mx-auto max-w-6xl px-4 py-8 lg:py-12">
+  template: `<main
+    data-theme="light"
+    class="mx-auto min-h-screen max-w-6xl bg-base-100 px-4 py-8 text-base-content lg:py-12"
+  >
     @if (cart$ | async; as cart) {
       <formation-shop-header [count]="cart.count" />
       <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,22rem)]">
