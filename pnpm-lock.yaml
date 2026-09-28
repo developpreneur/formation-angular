@@ -125,6 +125,12 @@ importers:
       '@angular/platform-browser-dynamic':
         specifier: 22.1.6
         version: 22.1.6(@angular/common@22.1.6(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2))(@angular/compiler@22.1.6)(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(@angular/platform-browser@22.1.6(@angular/animations@22.1.6(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0)))(@angular/common@22.1.6(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2))(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0)))
+      '@ngrx/effects':
+        specifier: 22.0.1
+        version: 22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(@ngrx/store@22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2))(rxjs@7.8.2)
+      '@ngrx/store':
+        specifier: 22.0.1
+        version: 22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2)
       '@tailwindcss/postcss':
         specifier: ^4.3.3
         version: 4.3.3
@@ -162,6 +168,9 @@ importers:
       '@angular/compiler-cli':
         specifier: 22.1.6
         version: 22.1.6(@angular/compiler@22.1.6)(typescript@6.0.3)
+      '@ngrx/store-devtools':
+        specifier: ^22.0.1
+        version: 22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(@ngrx/store@22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2))(rxjs@7.8.2)
       '@storybook/addon-docs':
         specifier: 10.6.0
         version: 10.6.0(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(storybook@10.6.0(@types/react@18.3.31)(react@19.3.0))
@@ -2804,10 +2813,30 @@ packages:
       '@ngrx/store': 15.4.0
       rxjs: ^6.5.3 || ^7.5.0
 
+  '@ngrx/effects@22.0.1':
+    resolution: {integrity: sha512-SRI6Q04rJfrf/qUwphzoJU8IJsPAPzP0MmmXK5qbMUuZ24V1JbAyI5+c0bEVzIFMMOooAU7wkO6iuJg5TVjmsw==}
+    peerDependencies:
+      '@angular/core': ^22.0.0
+      '@ngrx/store': 22.0.1
+      rxjs: ^6.5.3 || ^7.5.0
+
+  '@ngrx/store-devtools@22.0.1':
+    resolution: {integrity: sha512-mnsz+k0+07dUvThTehbKvlV8lyVWRRy6GTQuo30EW+40PSBvUkdcqhb8u63K2zIdV43SjsZOWEjDSjMJJSCCmg==}
+    peerDependencies:
+      '@angular/core': ^22.0.0
+      '@ngrx/store': 22.0.1
+      rxjs: ^6.5.3 || ^7.5.0
+
   '@ngrx/store@15.4.0':
     resolution: {integrity: sha512-OvCuNBHL8mAUnRTS6QSFm+IunspsYNu2cCwDovBNn7EGhxRuGihBeNoX47jCqWPHBFtokj4BlatDfpJ/yCh4xQ==}
     peerDependencies:
       '@angular/core': ^15.0.0
+      rxjs: ^6.5.3 || ^7.5.0
+
+  '@ngrx/store@22.0.1':
+    resolution: {integrity: sha512-CWCqqG+qepatkH9HE4+a17x/uyU/sTDO75IQWEntJi0xGTeE++iZH/QUm4MWB7mmb43Y+PnwydI3515DzfINtg==}
+    peerDependencies:
+      '@angular/core': ^22.0.0
       rxjs: ^6.5.3 || ^7.5.0
 
   '@ngtools/webpack@15.2.11':
@@ -12737,9 +12766,29 @@ snapshots:
       rxjs: 7.8.2
       tslib: 2.8.1
 
+  '@ngrx/effects@22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(@ngrx/store@22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2))(rxjs@7.8.2)':
+    dependencies:
+      '@angular/core': 22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0)
+      '@ngrx/store': 22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2)
+      rxjs: 7.8.2
+      tslib: 2.8.1
+
+  '@ngrx/store-devtools@22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(@ngrx/store@22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2))(rxjs@7.8.2)':
+    dependencies:
+      '@angular/core': 22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0)
+      '@ngrx/store': 22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2)
+      rxjs: 7.8.2
+      tslib: 2.8.1
+
   '@ngrx/store@15.4.0(@angular/core@15.2.10(rxjs@7.8.2)(zone.js@0.12.0))(rxjs@7.8.2)':
     dependencies:
       '@angular/core': 15.2.10(rxjs@7.8.2)(zone.js@0.12.0)
+      rxjs: 7.8.2
+      tslib: 2.8.1
+
+  '@ngrx/store@22.0.1(@angular/core@22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0))(rxjs@7.8.2)':
+    dependencies:
+      '@angular/core': 22.1.6(@angular/compiler@22.1.6)(rxjs@7.8.2)(zone.js@0.16.0)
       rxjs: 7.8.2
       tslib: 2.8.1
 
