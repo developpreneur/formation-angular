@@ -4,7 +4,11 @@ applyTo: "apps/angular-15/src/exercises/**,apps/angular-22/src/exercises/**"
 
 # Angular Storybook Exercises
 
-When creating or changing an exercise, inspect a neighboring exercise in the target app first. Reuse its Angular, TypeScript, and Storybook conventions. If the target app has no exercise examples, use the Angular 15 exercise structure as the reference and adapt APIs to the target app's installed versions.
+Use standalone Angular components with inline templates and explicit imports, following the target app's installed Angular APIs. Write learner-facing copy in French. Use typed Storybook `Meta` and `StoryObj` with matching `Exercices/...` and `Corrigés/...` titles. Tag the stories `exercise` and `solution` respectively, add `!autodocs` to the solution, and include topic tags when applicable. Export `ACompleter` ("À compléter") and `Corrige` ("Corrigé") as the story names.
+
+## Exercise UI
+
+Build the exercise UI exclusively with daisyUI components and utilities. Add only the minimal custom CSS needed where daisyUI cannot express the layout. Keep the result attractive and as simple as possible, so the feature being learned remains the visual and interactive focus.
 
 ## Files and ownership
 

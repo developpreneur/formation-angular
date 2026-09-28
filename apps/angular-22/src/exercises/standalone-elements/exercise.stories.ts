@@ -8,9 +8,9 @@ import { NgModuleMigrationExerciseComponent } from "./exercise.component";
  * La faible disponibilité en présentiel est mise en évidence.
  */
 const meta: Meta<NgModuleMigrationExerciseComponent> = {
-  title: "Exercices/08 — Standalone/1 — NgModule migration",
+  title: "Exercices/Standalone elements",
   component: NgModuleMigrationExerciseComponent,
-  tags: ["exercise", "standalone-08"],
+  tags: ["exercise", "standalone-elements"],
 };
 export default meta;
 type Story = StoryObj<NgModuleMigrationExerciseComponent>;

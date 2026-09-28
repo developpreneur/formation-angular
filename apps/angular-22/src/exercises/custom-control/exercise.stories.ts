@@ -12,9 +12,9 @@ import { ExerciseComponent } from "./exercise.component";
  * > Aide: Pour les validateur asynchrones, utilisez `NG_ASYNC_VALIDATORS` au lieu de `NG_VALIDATORS`.
  */
 const meta: Meta<ExerciseComponent> = {
-  title: "Exercices/06 — Contrôle de formulaire personnalisé",
+  title: "Exercices/Formulaire personnalisé",
   component: ExerciseComponent,
-  tags: ["exercise", "forms-06"],
+  tags: ["exercise", "custom-control"],
 };
 export default meta;
 type Story = StoryObj<ExerciseComponent>;
