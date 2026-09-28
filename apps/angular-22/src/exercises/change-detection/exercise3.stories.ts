@@ -3,14 +3,13 @@ import { verifyAsyncPipe } from "./behavior";
 import { AsyncDataExerciseComponent } from "./exercise.component";
 
 /**
- * Le message change de valeur après la souscription à l'Observable.
- *
- * Corrigez le composant pour refléter la modification de la valeur asynchrone.
+ * Le statut affiche d'abord « En attente », puis « Réponse reçue » lorsque
+ * la donnée asynchrone arrive, sans intervention de l'utilisateur.
  */
 const meta: Meta<AsyncDataExerciseComponent> = {
-  title: "Exercices/07 — Détection des changements/3 - Donnée asynchrone",
+  title: "Exercices/Détection des changements/Donnée asynchrone",
   component: AsyncDataExerciseComponent,
-  tags: ["exercise", "cd-07-change-detection"],
+  tags: ["exercise", "change-detection"],
 };
 export default meta;
 type Story = StoryObj<AsyncDataExerciseComponent>;
